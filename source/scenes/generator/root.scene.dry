@@ -8,8 +8,8 @@ go-to: start_menu
 title: Back to start
 
 - @rus1: Go to the Russian Cyrillic Word Generator
-- @ukr2: Go to the Ukrainian Cyrillic Word Generator
-- @bel2: Go to the Belorussian Cyrillic Word Generator
+- @ukr1: Go to the Ukrainian Cyrillic Word Generator
+- @bel1: Go to the Belorussian Cyrillic Word Generator
 
 @rus1
 new-page: true
