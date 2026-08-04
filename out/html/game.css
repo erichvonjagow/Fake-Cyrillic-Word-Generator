@@ -514,7 +514,10 @@ table {
 }
 
 result-text {
-  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 3em;
   color: #000;
   font-weight: bold;
+  text-align: center;
 }
