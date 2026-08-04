@@ -513,7 +513,7 @@ table {
     border-spacing: 0.5em;
 }
 
-result-text {
+.result-text {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 3em;

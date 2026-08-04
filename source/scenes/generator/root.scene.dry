@@ -6,6 +6,9 @@ go-to: start_menu
 
 @start_menu
 title: Back to start
+on-arrival {!
+    Q.wip_var = 0
+!}
 
 - @rus1: Go to the Russian Cyrillic Word Generator
 - @ukr1: Go to the Ukrainian Cyrillic Word Generator
@@ -20,6 +23,17 @@ new-page: true
 new-page: true
 on-arrival: {!
     Q.wip_var = 1
+    let L1 = Math.floor(Math.random() * 33) + 1;
+    if (L1 === 1) {
+        Q.RL1 = "Щ";
+    }
+    else if (L1 === 2) {
+        Q.RL1 = "0";
+    }
+    else {
+        Q.RL1 = "5";
+    }
+    Q.result = "[+ RL1 +]";
 !}
 go-to: result
 
@@ -39,6 +53,6 @@ Text
 
 @result
 
-<result-text>[+ wip_var +]</result-text>
+<p class="result-text">[+ result +]</p>
 
 - @start_menu
