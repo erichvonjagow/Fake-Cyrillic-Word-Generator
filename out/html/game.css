@@ -18,29 +18,6 @@ body {
   line-height: 155%;
   overflow-y: scroll;
 }
-body.dark-mode {
-  --bg-color: #000;
-  --border-color: #fff;
-  --content-bg-color: #242424;
-  --text-color: #efefef;
-  --link-color: #ff8080;
-  --link-hover-color: rgba(255, 255, 255, 0.06);
-  --tab-bg-color: #555555;
-  --tab-color: #505050;
-  --tab-hover-color: #242424;
-  --card-border-color: #4c4c4c;
-  --card-bg-color: #3f3f3f;
-}
-body.dark-mode #content {
-  border-style: double;
-  border-width: 4px;
-  border-color: #888;
-}
-body.dark-mode .tools {
-  border-style: double;
-  border-width: 4px;
-  border-color: #888;
-}
 header, #content, footer {
   color: var(--text-color);
   max-width: 540px;
@@ -536,41 +513,8 @@ table {
     border-spacing: 0.5em;
 }
 
-/* Styles for parties */
-.seat.kpd {
-    fill: #8B0000;
-}
-.seat.spd {
-    fill: #E3000F;
-    stroke: var(--border-color);
-    stroke-width: 1.5px;
-}
-.seat.ddp {
-    fill: #DCCA4A;
-}
-.seat.z {
-    fill: #000;
-}
-.seat.bvp {
-    fill: #69A2BE;
-}
-.seat.dvp {
-    fill: #D5AC27;
-}
-.seat.other {
-    fill: #909090;
-}
-.seat.dnvp {
-    fill: #3F7BC1;
-}
-.seat.nsdap {
-    fill: #954B00;
-}
-.seat.sapd {
-    fill: #C40000;
-}
-
-.tooltip-text {
-    text-decoration: underline;
-    text-decoration-style: dotted;
+result-text {
+  font-size: 2em;
+  color: #000;
+  font-weight: bold;
 }
