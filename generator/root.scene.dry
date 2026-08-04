@@ -1,0 +1,44 @@
+title: Fake Cyrillic Word Generator
+new-page: true
+go-to: start_menu
+
+= Fake Cyrillic Word Generator
+
+@start_menu
+title: Back to start
+
+- @rus1: Go to the Russian Cyrillic Word Generator
+- @ukr2: Go to the Ukrainian Cyrillic Word Generator
+- @bel2: Go to the Belorussian Cyrillic Word Generator
+
+@rus1
+new-page: true
+
+- @rus1L: Generate a one letter word
+
+@rus_1L
+new-page: true
+on-arrival: {!
+    Q.wip_var = 1
+!}
+go-to: result
+
+@ukr1
+new-page: true
+choose-if: never
+unavailable-subtitle: Unavailable - Work in progress
+
+Text
+
+@bel1
+new-page: true
+choose-if: never
+unavailable-subtitle: Unavailable - Work in progress
+
+Text
+
+@result
+
+<result-text>[+ wip_var +]</result-text>
+
+- @start_menu
