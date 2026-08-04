@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
+  var TITLE = "Fake Cyrillic Word Generator" + '_' + "Erich von Jagow";
   
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
@@ -26,30 +26,6 @@
 
   // This function allows you to do something in response to signals.
   window.handleSignal = function(signal, event, scene_id) {
-  };
-  
-  // This function runs on a new page. Right now, this auto-saves.
-  window.onNewPage = function() {
-    var scene = window.dendryUI.dendryEngine.state.sceneId;
-    if (scene != 'root' && !window.justLoaded) {
-        window.dendryUI.autosave();
-    }
-    if (window.justLoaded) {
-        window.justLoaded = false;
-    }
-  };
-
-  // TODO: have some code for tabbed sidebar browsing.
-  window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
-
-  window.onDisplayContent = function() {
-      window.updateSidebar();
   };
 
   /*
@@ -85,7 +61,6 @@
 
 
   window.justLoaded = true;
-  window.statusTab = "status";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
