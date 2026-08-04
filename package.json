@@ -1,0 +1,24 @@
+{
+  "name": " fake_cyrillic_word_generator",
+  "version": "1",
+  "description": "Building the game:",
+  "main": "out/html/index.html",
+  "scripts": {
+    "dendrynexus": "dendrynexus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aucchen@github.com/aucchen/social_democracy_alternate_history.git"
+  },
+  "keywords": [],
+  "author": "Erich von Jagow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erichvonjagow/Fake-Cyrillic-Word-Generator/issues"
+  },
+  "homepage": "https://github.com/aucchen/social_democracy_alternate_history",
+  "dependencies": {
+    "dendrynexus": "github:aucchen/dendrynexus",
+    "parliament-svg": "^3.0.0"
+  }
+}
