@@ -7,7 +7,7 @@ go-to: start_menu
 @start_menu
 title: Back to start
 on-arrival {!
-    Q.wip_var = 0
+    Q.wip_var = 0;
 !}
 
 - @rus1: Go to the Russian Cyrillic Word Generator
