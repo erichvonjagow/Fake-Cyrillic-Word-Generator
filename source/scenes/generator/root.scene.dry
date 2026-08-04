@@ -6,7 +6,7 @@ go-to: start_menu
 
 @start_menu
 title: Back to start
-on-arrival {!
+on-arrival: {!
     Q.wip_var = 0;
 !}
 
